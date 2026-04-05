@@ -1,0 +1,69 @@
+# ============================================================
+# adaptive-playbook/MANIFEST.toml
+# ============================================================
+
+# REQ.1: Manifest MUST describe the operational role of this repository.
+# REQ.2: Manifest MUST distinguish this repo from GUIDE and SKILL repos.
+# WHY.1: Prevent conceptual/operational drift across adaptive-interfaces artifacts.
+
+schema = "adaptive-interfaces-manifest-1"
+schema_url = "https://github.com/adaptive-interfaces/.github/blob/main/schemas/adaptive-interfaces-manifest-1.md"
+
+[meta]
+framework = "Adaptive Interfaces"
+framework_url = "https://github.com/adaptive-interfaces"
+framework_note = "Defines layered agent configuration: ACS (behavior), ATD (tools), AO (team), domain (correctness)."
+description = "Operational playbook specifying how to configure agents to produce team-conforming output."
+purpose = "Provide a repeatable execution process for setting up priors, loading context layers, and evaluating agent output."
+
+[repo]
+name = "adaptive-playbook"
+kind = "playbook"
+description = "Execution protocol for configuring agents using ACS, ATD, AO, and domain context to achieve team-aligned output."
+
+[layer]
+space = "Agent Engineering"
+role = "execution"
+
+[depends]
+required = []
+optional = [
+  "adaptive-conformance-specification",   # ACS: behavior discipline
+  "adaptive-tool-discovery",              # ATD: tool capability mapping
+  "adaptive-onboarding",                 # AO: team conventions
+  "adaptive-sensor-testing",             # evaluation environment
+]
+
+[provides]
+artifacts = [
+  "PLAYBOOK.md",
+  "QUICKSTART.md",
+  "CHECKLIST.md",
+  "ANNOTATIONS.md",
+  "CITATION.cff",
+  "LICENSE",
+  "MANIFEST.toml",
+  "README.md",
+]
+
+[scope]
+includes = [
+  "step-by-step process for configuring agents before task execution",
+  "explicit ordering of context layers (ACS → ATD → AO → domain)",
+  "guidance for writing enforceable priors (config and context)",
+  "evaluation criteria for team-conforming output",
+  "iteration process for improving priors based on output gaps",
+]
+
+excludes = [
+  "conceptual explanation of the framework (defined in adaptive-guide)",
+  "behavioral protocol definition (defined in ACS)",
+  "tool capability registries (defined in ATD)",
+  "team context generation schemas (defined in AO)",
+  "domain-specific implementations or datasets",
+  "model training, prompting strategies, or fine-tuning",
+]
+
+[citation]
+cff = "CITATION.cff"
+preferred = "repo"

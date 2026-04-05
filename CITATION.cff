@@ -1,0 +1,45 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+# REQ.UNIVERSAL: Professional open projects SHOULD include CITATION.cff.
+# WHY: Support correct citation and attribution.
+# ALT: Internal or private repositories may omit citation metadata.
+# CUSTOM: Update author, repository, license, and keyword fields as needed.
+# USAGE: See https://citation-file-format.github.io/ for details.
+
+cff-version: "1.2.0"
+type: software
+
+title: "adaptive-playbook: Operational Implementation of the Adaptive Interfaces Guide"
+date-released: "2026-04-05"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code: "https://github.com/adaptive-interfaces/adaptive-playbook"
+url: "https://github.com/adaptive-interfaces/adaptive-playbook"
+license: MIT
+
+abstract: |
+  An operational playbook for configuring agents to produce team-conforming output.
+  Defines a repeatable execution process for establishing priors, loading adaptive
+  interface layers (ACS, ATD, AO, domain context), and evaluating results against
+  team conventions and domain correctness. Focuses on actionable setup rather than
+  conceptual guidance.
+
+keywords:
+  - agent engineering
+  - agent configuration
+  - adaptive interfaces
+  - adaptive onboarding
+  - adaptive conformance
+  - team-conforming output
+  - priors
+  - domain context
+  - AI-assisted development
+
+message: "If using this project, please cite it as described in this file."
