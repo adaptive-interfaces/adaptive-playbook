@@ -24,22 +24,23 @@ This repository is **operational**, not conceptual.
 
 This repository implements the **HOW**.
 
-| Layer | Repository | Role |
-||||
-| ACS | adaptive-conformance-specification | behavior discipline |
-| ATD | adaptive-tool-discovery | tool capability mapping |
-| AO | adaptive-onboarding | team conventions |
-| GUIDE | adaptive-guide | conceptual framework |
-| PLAYBOOK | adaptive-playbook | **execution protocol** |
+| Layer    | Repository                         | Role                    |
+| -------- | ---------------------------------- | ----------------------- |
+| ACS      | adaptive-conformance-specification | behavior discipline     |
+| ATD      | adaptive-tool-discovery            | tool capability mapping |
+| AO       | adaptive-onboarding                | team conventions        |
+| GUIDE    | adaptive-guide                     | conceptual framework    |
+| PLAYBOOK | adaptive-playbook                  | **execution protocol**  |
 
 ## 3. Scope: Included
 
 ### 3.1 Repository Core Artifacts
 
-- `PLAYBOOK.md` — step-by-step execution process
-- `QUICKSTART.md` — minimal setup for engineers
-- `CHECKLIST.md` — evaluation and PR enforcement
-- `ANNOTATIONS.md` — supporting notes
+- `PLAYBOOK.md` - step-by-step execution process
+- `QUICKSTART.md` - minimal setup for engineers
+- `CHECKLIST.md` - evaluation and PR enforcement
+- `ANNOTATIONS.md` - supporting notes
+- `patterns/scaffold-new-repo.md` - starting a new project
 
 ### 3.2 Repository Function
 
