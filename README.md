@@ -82,7 +82,7 @@ Prompts are task instructions; **priors are the system.**
 ## 7. Developer
 
 ```shell
-npx markdownlint-cli@latest "**/*.md"
+npx markdownlint-cli "**/*.md" --fix
 ```
 
 ## 8. Annotations

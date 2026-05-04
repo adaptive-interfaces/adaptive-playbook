@@ -1,6 +1,7 @@
 # ============================================================
 # .github/workflows/md-lint.yml (Continuous Integration)
 # ============================================================
+# Updated: 2026-05-03
 # WHY-FILE: Repository hygiene for org-level markdown and schema docs.
 
 name: Markdown Lint
@@ -33,12 +34,14 @@ jobs:
         # WHY: Needed to access files for checks.
         uses: actions/checkout@v6
 
+      - name: A2) Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
       # ============================================================
       # BASIC CHECKS: Markdown
       # ============================================================
 
       - name: B1) Lint markdown files
-        # WHY: Enforce consistent formatting in normative schema docs and README.
-        uses: DavidAnson/markdownlint-cli2-action@v23
-        with:
-          globs: "**/*.md"
+        run: npx markdownlint-cli "**/*.md"

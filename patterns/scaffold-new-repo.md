@@ -1,6 +1,6 @@
 # scaffold-new-repo.md
 
-How to scaffold a new repo using ACS conformance and a 
+How to scaffold a new repo using ACS conformance and a
 MANIFEST.toml conventions pointer.
 
 ## How it works

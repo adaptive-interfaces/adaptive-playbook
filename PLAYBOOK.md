@@ -4,10 +4,10 @@
 
 ## 1. Purpose
 
-This playbook defines the **exact process engineers follow** to configure an agent so that it produces output that conforms to team conventions, structure, and domain expectations.
-
-This is not a conceptual guide.  
-This is a **repeatable execution protocol**.
+This playbook defines the **exact process engineers follow**
+to configure an agent so that it produces output that
+conforms to team conventions, structure, and domain expectations.
+It offers a **repeatable execution protocol**.
 
 ## 2. Core Principle
 
