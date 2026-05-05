@@ -69,7 +69,7 @@ identity, package/module names, CLI names, dependencies, docs settings, CI
 settings, validation commands, release metadata, and generated artifact names.
 
 Important:
-- The target repo is available the link bove.
+- The target repo is available the link above.
 - The [conventions].source value in MANIFEST.toml points to the conventions
   source repo.
 - The conventions source repo is a worked example and conformance source, not
