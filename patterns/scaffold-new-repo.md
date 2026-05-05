@@ -62,12 +62,64 @@ The repo must have a fully configured MANIFEST.toml and all files from commits 1
 Example prompt:
 
 ```text
-Scaffold https://github.com/ORG/REPO
-following MANIFEST.toml, AGENTS.md, AGENT_CONDUCT.md, and CLAUDE.md in the repo.
-Generate all convention files, pyproject.toml, CI workflows, src stubs,
-and any other files derived from the manifest.
-Package as a zip using: cd <output-folder> && zip -r ../output.zip .
-so it extracts correctly on Windows, Mac, and Linux.
+Scaffold https://github.com/ORG/REPO.
+
+Use the target repository's MANIFEST.toml as authoritative for the target repo's
+identity, package/module names, CLI names, dependencies, docs settings, CI
+settings, validation commands, release metadata, and generated artifact names.
+
+Important:
+- The target repo is available the link bove.
+- The [conventions].source value in MANIFEST.toml points to the conventions
+  source repo.
+- The conventions source repo is a worked example and conformance source, not
+  the target identity.
+- Do not copy the conventions source repo's identity into the target repo.
+- Do not write directly into the target repository.
+- Generate a separate named scaffold folder only.
+- The user will manually review the generated scaffold and decide what to copy.
+- Do not move on to project-specific logic yet - this is just Commit 3 in 
+  the scaffolding process to learn to code like a team member.
+
+Process:
+1. Read the target repo's MANIFEST.toml and agent guidance files.
+2. Read [conventions].source from MANIFEST.toml.
+3. Clone/read the conventions source repo.
+4. Discover the scaffold by inspecting the conventions source:
+   - repository layout
+   - convention files
+   - docs configuration
+   - CI workflows
+   - package configuration
+   - source layout
+   - tests
+   - validation commands
+   - naming patterns
+   - formatting and comment conventions
+5. Classify discovered files into:
+   - repo-independent convention files to copy verbatim
+   - identity-bearing files to adapt to the target manifest
+   - project-specific files that require fresh target stubs
+6. Generate the target scaffold in a separate folder named:
+
+   ptat-monitor-commit-3-scaffold
+
+Do not rely on a hard-coded list of files. 
+Discover what belongs in the scaffold
+from the conventions source and the target manifest.
+
+Before packaging:
+- Search generated files for accidental conventions-source identity leakage.
+- Verify that identity-bearing files consistently use the target repo identity.
+- Run available local checks when possible.
+- Do not push, commit, overwrite, or modify the target repository.
+
+Package the scaffold folder as output.zip from the parent directory:
+
+zip -r output.zip ptat-monitor-commit-3-scaffold
+
+The zip must extract to a named review folder, not directly into the repository
+root. The user decides what, if anything, to copy into the actual repo.
 ```
 
 Extract with:
