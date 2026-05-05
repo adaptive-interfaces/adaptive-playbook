@@ -1,6 +1,6 @@
 # adaptive-playbook
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/license/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Markdown Lint](https://github.com/adaptive-interfaces/adaptive-playbook/actions/workflows/md-lint.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/adaptive-playbook/actions/workflows/md-lint.yml)
 [![Check Links](https://github.com/adaptive-interfaces/adaptive-playbook/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/adaptive-playbook/actions/workflows/links.yml)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/adaptive-interfaces/adaptive-playbook/security)
@@ -82,7 +82,7 @@ Prompts are task instructions; **priors are the system.**
 ## 7. Developer
 
 ```shell
-npx markdownlint-cli "**/*.md" --fix
+npx markdownlint-cli2 --fix
 ```
 
 ## 8. Annotations
@@ -99,4 +99,4 @@ npx markdownlint-cli "**/*.md" --fix
 
 ## 11. License
 
-[MIT](./LICENSE)
+MIT © 2026 [Adaptive Interfaces](https://github.com/adaptive-interfaces)

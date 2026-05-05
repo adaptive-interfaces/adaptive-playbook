@@ -44,4 +44,4 @@ jobs:
       # ============================================================
 
       - name: B1) Lint markdown files
-        run: npx markdownlint-cli "**/*.md"
+        run: npx markdownlint-cli2
