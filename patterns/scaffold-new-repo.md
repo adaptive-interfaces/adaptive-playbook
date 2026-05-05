@@ -31,19 +31,27 @@ In the GH Repo (as needed):
 - Settings / Turn off Wiki
 - Settings / Turn off Projects
 
-### Commit 2. Add AGENTS.md and CLAUDE.md
+### Commit 2. Add Agent Instructions
 
 `AGENTS.md` - include formatting conventions, tool requirements, and domain-specific rules.
 
-`CLAUDE.md` - minimal, points at AGENTS.md:
+`AGENT_CONDUCT.md` - (optional) behavior preferences.
+
+`CLAUDE.md` - minimal, points at other documents:
 
 ```markdown
 # CLAUDE.md (repo-name)
 
-Follow all formatting conventions in AGENTS.md.
+Read these files in order before generating any artifact:
+
+1. [`MANIFEST.toml`](./MANIFEST.toml) - repository contract and agent configuration
+2. [`SKILL.md`](./SKILL.md) - operating guide and interface contract
+3. [`DECISIONS.md`](./DECISIONS.md) - design rationale
+4. [`AGENTS.md`](./AGENTS.md) - workflow requirements
+5. [`AGENT_CONDUCT.md`](./AGENT_CONDUCT.md) - behavioral constraints
+
 ```
 
-Extend CLAUDE.md with behavioral constraints as needed.
 See `adaptive-playbook` for the full behavioral constraint pattern.
 
 ### Commit 3. Agent Scaffold from Manifest
