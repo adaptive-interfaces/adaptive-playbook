@@ -102,7 +102,7 @@ Process:
    - project-specific files that require fresh target stubs
 6. Generate the target scaffold in a separate folder named:
 
-   ptat-monitor-commit-3-scaffold
+   REPO-commit-3-scaffold
 
 Do not rely on a hard-coded list of files. 
 Discover what belongs in the scaffold
@@ -116,7 +116,7 @@ Before packaging:
 
 Package the scaffold folder as output.zip from the parent directory:
 
-zip -r output.zip ptat-monitor-commit-3-scaffold
+zip -r output.zip REPO-commit-3-scaffold
 
 The zip must extract to a named review folder, not directly into the repository
 root. The user decides what, if anything, to copy into the actual repo.
