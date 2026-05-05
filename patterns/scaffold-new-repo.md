@@ -63,7 +63,7 @@ Example prompt:
 
 ```text
 Scaffold https://github.com/ORG/REPO
-following MANIFEST.toml, AGENTS.md, and CLAUDE.md in the repo.
+following MANIFEST.toml, AGENTS.md, AGENT_CONDUCT.md, and CLAUDE.md in the repo.
 Generate all convention files, pyproject.toml, CI workflows, src stubs,
 and any other files derived from the manifest.
 Package as a zip using: cd <output-folder> && zip -r ../output.zip .
